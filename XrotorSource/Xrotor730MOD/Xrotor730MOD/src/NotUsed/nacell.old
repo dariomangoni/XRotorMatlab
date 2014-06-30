@@ -1,0 +1,92 @@
+
+
+      SUBROUTINE NACELL(FNAME1)
+      INCLUDE 'XROTOR.INC'
+      CHARACTER*(*) FNAME1
+      PARAMETER (IZX=50)
+      DIMENSION ABODY(IZX), ZBODY(IZX), RBODY(IZX)
+C------------------------------------------------------------
+C     Reads in specified nacelle cross-sectional area data
+C     file and calculates associated disturbance velocity
+C     field at all real prop radial stations.
+C------------------------------------------------------------
+C
+      GREEK = .FALSE.
+C
+      LU = 17
+C
+      IF(RAD.EQ.0.0) THEN
+       WRITE(IWRIT,*) 'Must define rotor geometry first'
+       RETURN
+      ENDIF
+C
+      FNAME = FNAME1
+      IF(FNAME(1:1) .EQ. ' ')
+     & CALL ASKS('Enter nacelle cross-sectional area data file^',FNAME)
+      OPEN(LU,FILE=FNAME,STATUS='OLD',ERR=80)
+      READ(LU,*,ERR=90) ZPROP, AWAKE
+      IF(AWAKE .LT. 0.0) AWAKE = PI*AWAKE**2
+      DO 10 K=1, IZX
+        READ(LU,*,END=11,ERR=90) ZBODY(K), ABODY(K)
+        IF(ABODY(K) .LT. 0.0) ABODY(K) = PI*ABODY(K)**2
+   10 CONTINUE
+   11 NZ = K-1
+      CLOSE(LU)
+C
+C---- non-dimensionalize with prop radius
+      ZPROP = ZPROP/RAD
+      AWAKE = AWAKE/RAD**2
+      DO 20 K=1, NZ
+        ZBODY(K) = ZBODY(K)/RAD    - ZPROP
+        ABODY(K) = ABODY(K)/RAD**2
+        RBODY(K) = SQRT( ABODY(K)/PI )
+   20 CONTINUE
+C
+C---- get body velocity from source integral for each radial station
+      DO 50 I=1, II
+        USUM = 0.
+        VSUM = 0.
+        DO K=1, NZ-1
+          DA =  ABODY(K+1) - ABODY(K)
+          ZZ = (ZBODY(K+1) + ZBODY(K))*0.5
+          USUM = USUM - DA*ZZ   /SQRT((ZZ**2 + XI(I)**2)**3)
+          VSUM = VSUM + DA*XI(I)/SQRT((ZZ**2 + XI(I)**2)**3)
+	CONTINUE
+        UBODY(I) = USUM / (4.0*PI)
+        VBODY(I) = VSUM / (4.0*PI)
+   50 CONTINUE
+C
+C---- set wake core radius from far wake area
+      XW0 = SQRT(AWAKE/PI)
+C
+      CALL XWINIT
+C
+      WRITE(IWRIT,1000) XW0, (I,UBODY(I),VBODY(I),XI(I), I=1,II,INCR)
+      CONV = .FALSE.
+C
+      CALL PLTINI(SCRNFR,IPSLU,IDEV,SIZE,LPLOT)
+      CALL PLOTABS(0.5,1.5,-3)
+      CALL NACPLT(NZ,ZBODY,RBODY,0.0,XW0, II,XI(1),UBODY)
+C
+      RETURN
+C
+   80 WRITE(IWRIT,*) 'Nacelle data file OPEN error'
+      DO 85 I=1, II
+        UBODY(I) = 0.
+   85 CONTINUE
+      WRITE(IWRIT,*) 'Nacelle perturbation velocities set to zero'
+      RETURN
+C
+   90 WRITE(IWRIT,*) 'Nacelle data file READ error'
+      DO 95 I=1, II
+        UBODY(I) = 0.
+   95 CONTINUE
+      WRITE(IWRIT,*) 'Nacelle perturbation velocities set to zero'
+      RETURN
+C..............................................................
+ 1000 FORMAT(/' Far wake displacement body radius r/R:', F10.3 /
+     &       /' Radial distribution of disturbance velocity:'/
+     &       /'   i      u/U        v/U        r/R'
+     &       / 50(1X, I3, 2F11.5, F10.3 /) )
+C                10   -0.00123     0.874
+      END ! NACELL

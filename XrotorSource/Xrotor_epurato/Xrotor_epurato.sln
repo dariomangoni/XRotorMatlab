@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Xrotor_epurato", "Xrotor_epurato\Xrotor_epurato.vfproj", "{649DEE4B-1B7B-4DD6-A2A7-38EFCAE26ADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{649DEE4B-1B7B-4DD6-A2A7-38EFCAE26ADC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{649DEE4B-1B7B-4DD6-A2A7-38EFCAE26ADC}.Debug|Win32.Build.0 = Debug|Win32
+		{649DEE4B-1B7B-4DD6-A2A7-38EFCAE26ADC}.Release|Win32.ActiveCfg = Release|Win32
+		{649DEE4B-1B7B-4DD6-A2A7-38EFCAE26ADC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

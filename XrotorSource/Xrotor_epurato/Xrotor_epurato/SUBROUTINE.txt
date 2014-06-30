@@ -1,0 +1,361 @@
+SUBROUTINE AERO
+	Line 359:       SUBROUTINE AEROEDIT(NSEC)
+	Line 631:       SUBROUTINE SETIAERO
+	Line 652:       SUBROUTINE GETAERO(N,XISECT,A0,CLMAX,CLMIN,
+	Line 684:       SUBROUTINE PUTAERO(N,XISECT,A0,CLMAX,CLMIN,
+	Line 717:       SUBROUTINE SORTAR(NS,S,W,NDIM)
+	Line 756:       SUBROUTINE GETCLCDCM(IS,ALF,W,REY,
+	Line 866:       SUBROUTINE GETALF(IS,CLIFT,W,ALF,ALF_CL,ALF_W,STALLF)
+	Line 913:       SUBROUTINE CLCDCM(ALF,W,REY,
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\plutil.f (11 hits)
+	Line 21:       SUBROUTINE PLTINI(SCRNFR,IPSLU,IDEV,FACTOR,LPLOT,LLAND)
+	Line 64:       SUBROUTINE COLORSPECTRUMHUES1(ncols,HUESTR)
+	Line 129:       SUBROUTINE PLSUBS(XC,YC,CHX,STRING,ANGLE,NC,PLFONT)
+	Line 159:       SUBROUTINE PLSUPS(XC,YC,CHX,STRING,ANGLE,NC,PLFONT)
+	Line 189:       SUBROUTINE SCALIT(II,Y,YOFF,YSF)
+	Line 237:       SUBROUTINE PLCIRC(X0,Y0,RAD, NSEG)
+	Line 268:       SUBROUTINE OFFGET(XOFF,YOFF,XSF,YSF,XWIND,YWIND,LSAME,LCURS)
+	Line 347:       SUBROUTINE PABORT
+	Line 388:       SUBROUTINE PZOOM
+	Line 427:       SUBROUTINE PUNZOOM
+	Line 514:       SUBROUTINE OPLSET(IDEV,IDEVRP,IPSLU,
+  C:\Users\Dario\Dropbox\TesiMagistrale\Xrotor_epurato\src\xbend.f (10 hits)
+	Line 21:       SUBROUTINE BEND
+	Line 212:       SUBROUTINE EILOAD(FNAME1)
+	Line 308:       SUBROUTINE STCLR
+	Line 330:       SUBROUTINE MCLR
+	Line 344:       SUBROUTINE STLOAD
+	Line 480:       SUBROUTINE STCALC
+	Line 893:       SUBROUTINE STADD
+	Line 913:       SUBROUTINE STSET
+	Line 934:       SUBROUTINE STWRIT(LU)
+	Line 1028:       SUBROUTINE B12SOL(A,B,C,R,II)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\jputil.f (2 hits)
+	Line 22:       SUBROUTINE CONPLT(IX,JX,II,JJ,X,Y,JLOW,JUPP,F,FCON,
+	Line 141:       SUBROUTINE CONLAB(IX,JX,II,JJ,X,Y,F,FCON,XOFF,YOFF,XWT,YWT,
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\modify.f (2 hits)
+	Line 21:       SUBROUTINE CRSMOD(N,X,Y,YP,
+	Line 251:       SUBROUTINE SORT(NW,S,W)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\plotdata.f (4 hits)
+	Line 20:       SUBROUTINE PLOT_DATA(PLTTYPE)
+	Line 432:       SUBROUTINE PLOTXY2(NDIM,
+	Line 743:       SUBROUTINE OFFSET2D(XLIM,YLIM)
+	Line 780:       SUBROUTINE XAXIS2(X1,Y1,XAXT,DXANN,FANN,DANN,IFLAG,CHT,NDIG)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\spline.f (11 hits)
+	Line 21:       SUBROUTINE SPLINE(X,XS,S,N)
+	Line 69:       SUBROUTINE SPLIND(X,XS,S,N,XS1,XS2)
+	Line 158:       SUBROUTINE SPLINA(X,XS,S,N)
+	Line 207:       SUBROUTINE TRISOL(A,B,C,D,KK)
+	Line 346:       SUBROUTINE SEVALL(SS,X,XS,S,N,
+	Line 503:       SUBROUTINE SINVRT(SI,XI,X,XS,S,N)
+	Line 532:       SUBROUTINE SCALC(X,Y,S,N)
+	Line 549:       SUBROUTINE SEGSPL(X,XS,S,N)
+	Line 584:       SUBROUTINE INTERS(OK,SS1,SS2,
+	Line 678:       SUBROUTINE NEARPT(XPNT,YPNT,SNEAR,X,XP,Y,YP,S,N)
+	Line 716:       SUBROUTINE SEVLIN(SS,X,S,N, XX,XXS)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\srclin.f (2 hits)
+	Line 21:       SUBROUTINE SRCLIN(NB,ZB,RB, SRC)
+	Line 69:       SUBROUTINE SRCVEL(NB,ZB,SRC, Z,R,U,V)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\userio.f (12 hits)
+	Line 25:       SUBROUTINE ASKI(PROMPT,IINPUT)
+	Line 47:       SUBROUTINE ASKR(PROMPT,RINPUT)
+	Line 69:       SUBROUTINE ASKL(PROMPT,LINPUT)
+	Line 94:       SUBROUTINE ASKS(PROMPT,INPUT)
+	Line 115:       SUBROUTINE ASKC(PROMPT,COMAND,CARGS)
+	Line 182:       SUBROUTINE ASKC1(PROMPT,CINPUT)
+	Line 204:       SUBROUTINE LC2UC(INPUT)
+	Line 224:       SUBROUTINE READI(N,IVAR,ERROR)
+	Line 254:       SUBROUTINE READR(N,VAR,ERROR)
+	Line 284:       SUBROUTINE GETINT(INPUT,A,N,ERROR)
+	Line 357:       SUBROUTINE GETFLT(INPUT,A,N,ERROR)
+	Line 431:       SUBROUTINE STRIP(STRING,NS)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\vortex.f (2 hits)
+	Line 21:       SUBROUTINE VRTXCO(IMAX,II, NBLDS, LDUCT, RAKE,
+	Line 248:       SUBROUTINE VORSEGVEL(A, B, UVW, UVW_A, UVW_B )
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xbend.f (10 hits)
+	Line 21:       SUBROUTINE BEND
+	Line 234:       SUBROUTINE EILOAD(FNAME1)
+	Line 330:       SUBROUTINE STCLR
+	Line 352:       SUBROUTINE MCLR
+	Line 366:       SUBROUTINE STLOAD
+	Line 502:       SUBROUTINE STCALC
+	Line 915:       SUBROUTINE STADD
+	Line 935:       SUBROUTINE STSET
+	Line 956:       SUBROUTINE STWRIT(LU)
+	Line 1050:       SUBROUTINE B12SOL(A,B,C,R,II)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xcasepl.f (2 hits)
+	Line 21:       SUBROUTINE ACLPLT
+	Line 399:       SUBROUTINE CASPLT
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xdesi.f (8 hits)
+	Line 21:       SUBROUTINE DESI
+	Line 580:       SUBROUTINE DESGEN
+	Line 666:       SUBROUTINE DESINI
+	Line 780:       SUBROUTINE DESMIL(ICASE)
+	Line 829:       SUBROUTINE DEITER(ICASE)
+	Line 1107:       SUBROUTINE SETCLD(CL1,CL2)
+	Line 1146:       SUBROUTINE SAVCLD
+	Line 1182:       SUBROUTINE MODCL
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xinte.f (2 hits)
+	Line 21:       SUBROUTINE INTE1
+	Line 172:       SUBROUTINE INTE2
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xio.f (5 hits)
+	Line 21:       SUBROUTINE SAVEOLD(FNAME1)
+	Line 104:       SUBROUTINE SAVE(FNAME1)
+	Line 230:       SUBROUTINE LOADOLD(FNAME1)
+	Line 378:       SUBROUTINE LOAD(FNAME1)
+	Line 582:       SUBROUTINE RDLINE(LUN,LINE)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xjmap.f (1 hit)
+	Line 21:       SUBROUTINE JMAP
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xmodi.f (4 hits)
+	Line 21:       SUBROUTINE MODI
+	Line 471:       SUBROUTINE MODBE
+	Line 525:       SUBROUTINE MODCH
+	Line 573:       SUBROUTINE PLTMOD(N,X,Y,DYMIN,YLIMS,
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xnoise.f (12 hits)
+	Line 21:       SUBROUTINE NOISE
+	Line 533:       SUBROUTINE PTRACE(XOBS,YOBS,ZOBS,
+	Line 815:       SUBROUTINE PTITLE(XLAB,YLAB,SH,XYZOBS,ULNAM)
+	Line 865:       SUBROUTINE CTITLE(XLAB,YLAB,SH,GALT,DCLIMB,ULNAM)
+	Line 913:       SUBROUTINE SFT(Y,T,N, FAMPL, PHASE,NF)
+	Line 960:       SUBROUTINE PSPLIN(X,XP,S,II)
+	Line 1000:       SUBROUTINE PTRISO(A,B,C,D,KK)
+	Line 1039:       SUBROUTINE DBFOOT(NBLDS,II,XI,DXI,AOC,CH,GAM,
+	Line 1144:       SUBROUTINE PTPLOT(NTMAX, NT, PCOMP, PRES, TIME,
+	Line 1254:       SUBROUTINE DBSPLT(NHARM,DHARM,DECIB, PLAR,SH,LGRID)
+	Line 1324:       SUBROUTINE DBXPLT(NXDIM,NYDIM,NX,NY,X,Y,D,
+	Line 1456:       SUBROUTINE DBCPLT(NXDIM,NYDIM,NX,NY,X,Y,D,
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xoper.f (17 hits)
+	Line 21:       SUBROUTINE OPER
+	Line 887:       SUBROUTINE GETPVAR(LU,NDIM,N,XRPM,XPWR)
+	Line 910:       SUBROUTINE SHOCAS(LU,NDIM,N,PAR,RAD,NAME)
+	Line 1019:       SUBROUTINE GETCAS(LU,NDIM,NCAS,PAR)
+	Line 1085:       SUBROUTINE SETCAS(ITYPE,NINPUT,RINPUT)
+	Line 1393:       SUBROUTINE APER(ISPEC,ICON,LINIT)
+	Line 1432:       SUBROUTINE APINIT
+	Line 1646:       SUBROUTINE APITER(ISPEC,ICON)
+	Line 2025:       SUBROUTINE ADWCORR
+	Line 2048:       SUBROUTINE CSCALC(I,UTOT,WA,WT,
+	Line 2109:       SUBROUTINE XWINIT
+	Line 2152:       SUBROUTINE SETXW
+	Line 2328:       SUBROUTINE TPQ(ITYPE)
+	Line 2796:       SUBROUTINE VCALC
+	Line 2820:       SUBROUTINE GRADMO(IMAX,II, NBLDS, LDUCT, RAKE,
+	Line 2917:       SUBROUTINE HELICO(IMAX,II, NBLDS, LDUCT, RAKE,
+	Line 3194:       SUBROUTINE FILTER(Q,SMLEN,N)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xrotor.f (18 hits)
+	Line 305:       SUBROUTINE INIT
+	Line 434:       SUBROUTINE SETDEF
+	Line 496:       SUBROUTINE GETDEF
+	Line 539:       SUBROUTINE WRTDEF
+	Line 604:       SUBROUTINE ATMO(ALSPEC,VSOALT,RHOALT,RMUALT)
+	Line 704:       SUBROUTINE FLOSHO(LU, VSO, RHO, RMU)
+	Line 721:       SUBROUTINE NACELL(FNAME1)
+	Line 845:       SUBROUTINE ARBI
+	Line 936:       SUBROUTINE REINIT
+	Line 977:       SUBROUTINE INTE
+	Line 1061:       SUBROUTINE SETX
+	Line 1132:       SUBROUTINE OPFILE(LU,FNAME)
+	Line 1192:       SUBROUTINE OUTPUT(LU)
+	Line 1402:       SUBROUTINE RESPACI(IINEW)
+	Line 1466:       SUBROUTINE CPROJ
+	Line 1505:       SUBROUTINE GETVEL(FNAME1)
+	Line 1565:       SUBROUTINE SAVVEL(FNAME1)
+	Line 1639:       SUBROUTINE UVADD(XIW,WA,WT)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xrotpl.f (10 hits)
+	Line 22: C    *     All the graphics subroutines below require     *
+	Line 27:       SUBROUTINE GEOPLT(VIEW)
+	Line 308:       SUBROUTINE CLPLT
+	Line 633:       SUBROUTINE UVIPLT
+	Line 930:       SUBROUTINE TRIPLT
+	Line 1106:       SUBROUTINE VELPLT
+	Line 1251:       SUBROUTINE NACPLT(NB,ZB,RB,ZPROP,RW, N,R,U)
+	Line 1321:       SUBROUTINE REFPLT(FNAME, XOFF,YOFF,XFAC,YFAC, SSIZE,ISYM)
+	Line 1375:       SUBROUTINE PRPPLT
+	Line 1565:       SUBROUTINE UVIPLT3
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\src\xutils.f (4 hits)
+	Line 21:       SUBROUTINE SETEXP(S,SMAX,NN)
+	Line 85:       SUBROUTINE GAUSS(NSIZ,NN,Z,R,NRHS)
+	Line 167:       SUBROUTINE LUDCMP(NSIZ,N,A,INDX)
+	Line 239:       SUBROUTINE BAKSUB(NSIZ,N,A,INDX,B)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\set_subs.f (16 hits)
+	Line 35:       subroutine set_pen(ipen)
+	Line 45:       subroutine set_pat(ipat)
+	Line 55:       subroutine set_color(icolor)
+	Line 65:       subroutine set_scl(xscale,yscale)
+	Line 74:       subroutine putprim(ityp,ival,xval,yval)
+	Line 131:       subroutine getprim(icount,ityp,ival,xval,yval)
+	Line 206:       subroutine rd_array(lunit,n,ityp,iprim,xprim,yprim)
+	Line 218:       subroutine wr_array(lunit,n,ityp,iprim,xprim,yprim)
+	Line 228:       subroutine set_clip(XMIN,YMIN,XMAX,YMAX)
+	Line 242:       subroutine plot_1(X,Y,icode)	
+	Line 307:       subroutine clip_ls(X1,Y1,X2,Y2,ivis)
+	Line 368:       subroutine polyline_1(X,Y,n,ifill)
+	Line 479:       subroutine clip_poly0(xp,yp,np,xclp,yclp,nclp,xout,yout,nout)
+	Line 516:       subroutine clip_poly1(x,y,ilast,xclp,yclp,nclp,xout,yout,nout,
+	Line 603:       subroutine clip_poly2(x,y,ilast,xclp,yclp,nclp,xout,yout,nout,
+	Line 618:       subroutine set_zoom(XOFF_ZOOM,YOFF_ZOOM,XFAC_ZOOM,YFAC_ZOOM,
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\ps_subs_old.f (14 hits)
+	Line 42:       subroutine ps_setup(nunit)
+	Line 107:       subroutine ps_init
+	Line 126:       subroutine ps_open
+	Line 267:       subroutine a_strip(ALPH,STRING)
+	Line 284:       subroutine ps_close
+	Line 305:       subroutine ps_endpage
+	Line 326:       subroutine ps_flush
+	Line 333:       subroutine ps_color(icolor)
+	Line 369:       subroutine ps_pen(jpen)
+	Line 388:       subroutine ps_linepattern(lmask)
+	Line 422:       subroutine ps_line(X1,Y1,X2,Y2)
+	Line 472:       subroutine ps_setscale(factor)
+	Line 484:       subroutine ps_polyline(X,Y,n,ifill)
+	Line 552:       subroutine bitpat(mask,nout,iout)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\ps_subs.f (14 hits)
+	Line 42:       subroutine ps_setup(nunit)
+	Line 107:       subroutine ps_init
+	Line 126:       subroutine ps_open
+	Line 267:       subroutine a_strip(ALPH,STRING)
+	Line 284:       subroutine ps_close
+	Line 305:       subroutine ps_endpage
+	Line 326:       subroutine ps_flush
+	Line 333:       subroutine ps_color(icolor)
+	Line 369:       subroutine ps_pen(jpen)
+	Line 388:       subroutine ps_linepattern(lmask)
+	Line 422:       subroutine ps_line(X1,Y1,X2,Y2)
+	Line 477:       subroutine ps_setscale(factor)
+	Line 489:       subroutine ps_polyline(X,Y,n,ifill)
+	Line 557:       subroutine bitpat(mask,nout,iout)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\plt_util.f (10 hits)
+	Line 35:       subroutine XAXIS(X1,Y1,XAXT,DXANN,FANN,DANN,CHT,NDIG)
+	Line 98:       subroutine YAXIS(X1,Y1,YAXT,DYANN,FANN,DANN,CHT,NDIG)
+	Line 161:       subroutine XYLINE(N,X,Y,XOFF,XWT,YOFF,YWT,ILIN)
+	Line 277:       subroutine XYSYMB(N,X,Y,XOFF,XWT,YOFF,YWT,SH,ISYM)
+	Line 305:       subroutine CONT_GRID(IX,JX,II,JJ,X,Y,F,FCON,XOFF,YOFF,XWT,YWT)
+	Line 311:       subroutine CONTGRID(IX,JX,II,JJ,X,Y,F,FCON,XOFF,YOFF,XWT,YWT)
+	Line 426:       subroutine CONTQUAD(X,Y,F,
+	Line 580:       subroutine CONTTRI(X,Y,F,
+	Line 732:       subroutine AXISADJ(xmin,xmax,xspan,deltax,ntics)
+	Line 791:       subroutine ANNOT(CH)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\plt_old.f (21 hits)
+	Line 50:       subroutine PLOTS(idummy,ihard,ldev)
+	Line 85:       subroutine PLOTON
+	Line 90:       subroutine PLOTOF
+	Line 96:       subroutine ERASE
+	Line 102:       subroutine FACTOR(scl)
+	Line 108:       subroutine WHERE(xnow,ynow,fact)
+	Line 115:       subroutine WHEREC(xcurs,ycurs)
+	Line 122:       subroutine WINPIX(nxpix,nypix,ppi)
+	Line 133:       subroutine GETWINPIX(nxpix,nypix,ppi)
+	Line 141:       subroutine GRID (X,Y,NX,XD,NY,YD,LMASK)
+	Line 148:       subroutine COLOR (icol)
+	Line 166:       subroutine SETCOL (icol,red,grn,blu)
+	Line 223:       SUBROUTINE LINE (XARRAY,YARRAY,NPTS,INC,LINTYP,ISYM)
+	Line 341:       SUBROUTINE CURVE (X,Y,NE,DELTA)
+	Line 527:       SUBROUTINE AXIS (X,Y,LABEL,NCHAR,AXLEN,ANGLE,FVAL,DV)
+	Line 657:       SUBROUTINE AXIS2 (X,Y,LABEL,NCHAR,CSCAL,AXLEN,DAX,ANGLE,FVAL,DV)
+	Line 810:       SUBROUTINE SCALE (ARRAY,AXLEN,NPTS,INC)
+	Line 894:       SUBROUTINE SYMBL (X,Y,HGT,ISYM,ANGLE,NC)
+	Line 922:       SUBROUTINE SYMBOL(XZ,YZ,HGT,ITEXT,ANGLE,NZ)
+	Line 1288:       SUBROUTINE SOFFSET(FACC,ANCC,ANCS,XA,YA)
+	Line 1307:       SUBROUTINE NUMBER (X,Y,HEIGHT,FPN,ANGLE,NDIG)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\plt_color.f (15 hits)
+	Line 47:       subroutine NEWCOLOR(icol)
+	Line 54: C    (see colormap subroutines below for setting colormap colors)
+	Line 85:       subroutine GETCOLOR(icol)
+	Line 101:       subroutine GETCOLORINDEX(icindex)
+	Line 111:       subroutine NEWCOLORNAME(colorname)
+	Line 160:       subroutine NEWCOLORRGB(ired,igreen,iblue)
+	Line 195:       subroutine GETCOLORRGB(icol,ired,igrn,iblu,colorname)
+	Line 240:       subroutine convrt2uc(input)
+	Line 259:       subroutine GETNUMCOLOR(ncol)
+	Line 268:       subroutine GETNUMSPECTRUM(nspec)
+	Line 277:       subroutine COLORMAPDEFAULT
+	Line 407:       subroutine COLORSPECTRUMHUES(ncols,HUESTR)
+	Line 475:       subroutine COLORSPECTRUMTRP(ncols,NBASE,IRGBBASE,COLWIDTH)
+	Line 553:       subroutine COLORSPECTRUMRGB(NRGB,IRGB)
+	Line 602:       subroutine LWR2UPR(INPUT)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\plt_font.f (10 hits)
+	Line 49:       subroutine PLNUMB(xc,yc,chx,FPN,ANGLE,ndig)
+	Line 88:       subroutine PLCHAR(xc,yc,chx,STRING,ANGLE,nc)
+	Line 127:       subroutine PLSLAN(xc,yc,chx,STRING,ANGLE,nc)
+	Line 166:       subroutine PLMATH(xc,yc,chx,STRING,ANGLE,nc)
+	Line 205:       subroutine PLSYMB(xc,yc,chx,ISYM,ANGLE,nc)
+	Line 249:       subroutine PLNUMBABS(XC,YC,CHX,FPN,ANGLE,ndig)
+	Line 345:       subroutine PLCHARABS(XC,YC,CHX,STRING,ANGLE,nc)
+	Line 452:       subroutine PLSLANABS(XC,YC,CHX,STRING,ANGLE,nc)
+	Line 559:       subroutine PLMATHABS(XC,YC,CHX,STRING,ANGLE,nc)
+	Line 666:       subroutine PLSYMBABS(XC,YC,CHX,ISYM,ANGLE,nc)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\plt_base.f (43 hits)
+	Line 43:       subroutine PLINITIALIZE
+	Line 60:       subroutine PLOPEN(relsize,nunit,idev)
+	Line 193:       subroutine REPLOT(idev)
+	Line 322:       subroutine PLCLOSE
+	Line 339:       subroutine PLEND
+	Line 354:       subroutine PLOT(x,y,icode)
+	Line 377:       subroutine PLOTABS(x,y,icode)
+	Line 425:       subroutine POLYLINE(x,y,n,ifill)
+	Line 447:       subroutine POLYLINEABS(X,Y,n,ifill)
+	Line 472:       subroutine GETPEN(ipen)
+	Line 479:       subroutine NEWPEN(ipen)
+	Line 495:       subroutine GETPAT(ipat)
+	Line 503:       subroutine NEWPAT(ipat)
+	Line 517:       subroutine GETORIGIN(XORG,YORG)
+	Line 527:       subroutine NEWORIGIN(XORG,YORG)
+	Line 537:       subroutine GETFACTORS(xscale,yscale)
+	Line 546:       subroutine NEWFACTOR(scale)
+	Line 556:       subroutine NEWFACTORS(xscale,yscale)
+	Line 566:       subroutine GETUSERTRANS(XORG,YORG,xscale,yscale)
+	Line 578:       subroutine NEWUSERTRANS(XORG,YORG,xscale,yscale)
+	Line 590:       subroutine GETLASTXY(x,y)
+	Line 601:       subroutine GETLASTXYABS(X,Y)
+	Line 611:       subroutine GETCURSORXY(x,y,chkey)
+	Line 625:       subroutine GETCURSORXYABS(X,Y,chkey)
+	Line 643:       subroutine GETWINSIZE(XSIZE,YSIZE)
+	Line 652:       subroutine GETPAGESIZE(XPAGE,YPAGE)
+	Line 661:       subroutine GETREVVIDEO(lflag)
+	Line 674:       subroutine WINERASE
+	Line 682:       subroutine PLFLUSH
+	Line 691:       subroutine DRAWTOSCREEN
+	Line 700:       subroutine DRAWTOBUFFER
+	Line 709:       subroutine SHOWBUFFER
+	Line 718:       subroutine NEWCLIP(xmin,xmax,ymin,ymax)
+	Line 733:       subroutine NEWCLIPABS(XMIN,XMAX,YMIN,YMAX)
+	Line 744:       subroutine GETCLIP(xmin,xmax,ymin,ymax)
+	Line 756:       subroutine GETCLIPABS(XMIN,XMAX,YMIN,YMAX)
+	Line 769:       subroutine CLRCLIP
+	Line 783:       subroutine GETZOOMABS(XOFF,YOFF,XFAC,YFAC)
+	Line 797:       subroutine NEWZOOMABS(XOFF,YOFF,XFAC,YFAC)
+	Line 814:       subroutine USETZOOM(LXYSAME,LCURSOR)
+	Line 828:       subroutine CLRZOOM
+	Line 868:       subroutine PLGRID (x,y,nx,xd,ny,yd,lmask)
+	Line 933:       subroutine PLGRIDABS(X,Y,nx,XD,ny,YD,lmask)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\plt_3D.f (6 hits)
+	Line 37:       subroutine VIEW(X,Y,Z,N,XP,YP,XOB,YOB,ZOB,ROBINV,XUP,YUP,ZUP)
+	Line 120:       subroutine VIEWR(R,N,RP,ROB,ROBINV,RUP)
+	Line 192:       SUBROUTINE PROJMATRIX3 (ROTZ,ROTY,RMAT)
+	Line 239:       SUBROUTINE PROJMATRIX4 (ROTZ,ROTY,RDIST,RMAT)
+	Line 330:       SUBROUTINE ROTPTS3 (RMAT,PTS_IN,NPTS,PTS_OUT)
+	Line 360:       SUBROUTINE ROTPTS4 (RMAT,PTS_IN,NPTS,PTS_OUT)
+  C:\Users\Dario\Documents\Visual Studio 2012\Projects\Xrotor_epurato\Xrotor_epurato\plotlib\gw_subs.f (23 hits)
+	Line 34:       subroutine gw_setup(scrn_fraction)
+	Line 75:       subroutine gw_init
+	Line 191:       subroutine gw_line(X1,Y1,X2,Y2)
+	Line 210:       subroutine gw_curs(X,Y,kchar)
+	Line 234:       subroutine gw_revflag
+	Line 245:       subroutine gw_endplot
+	Line 258:       subroutine gw_pen(ipen)
+	Line 275:       subroutine gw_linepattern(ipat)
+	Line 284:       subroutine gw_flush
+	Line 293:       subroutine gw_drawtoscreen
+	Line 302:       subroutine gw_drawtobuffer
+	Line 311:       subroutine gw_showbuffer
+	Line 321:       subroutine gw_clear
+	Line 330:       subroutine gw_setsize(nx,ny)
+	Line 381:       subroutine gw_getsize(nx,ny,ppi)
+	Line 395:       subroutine gw_close
+	Line 408:       subroutine gw_cname2rgb(colorname,ired,igrn,iblu)
+	Line 434:       subroutine gw_allocrgbcolor(ired,igrn,iblu,icolorindex)
+	Line 456:       subroutine gw_color(icolor)
+	Line 502:       subroutine gw_bgcolor(icolor)
+	Line 549:       subroutine gw_newcmap
+	Line 563:       subroutine gw_polyline(X,Y,n,ifill)
+	Line 595:       subroutine g_strip(strng,n)
